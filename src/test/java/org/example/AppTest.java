@@ -36,7 +36,7 @@ public class AppTest
     @Test
     void dropdownmethod()throws InterruptedException{
 
-        Thread.sleep(8000);
+        Thread.sleep(10000);
         driver.findElement(By.xpath("/html/body/div/div[2]/div/div/select[1]/option[3]")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("/html/body/div/div[2]/div/div/select[2]/option[3]")).click();
