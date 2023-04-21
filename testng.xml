@@ -2,11 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/vinay/IdeaProjects/maven1st">
-        <classes>
-
-            <class name="org.example.AppTest"></class>
-            <class name="org.example.GoogleSearchtest"></class>
-        </classes>
+        <parameter name="browser" value="chrome"></parameter>
+            <parameter name="url" value="http://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html"></parameter>
+            <classes>
+                <class name="org.example.AppTest">
+                    <methods><include name="dropdownmethod"/></methods>
+                </class>
+            </classes>
 
     </test>
 </suite>
